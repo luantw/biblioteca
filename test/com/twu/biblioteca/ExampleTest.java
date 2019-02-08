@@ -1,6 +1,7 @@
 package com.twu.biblioteca;
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -87,5 +88,27 @@ public class ExampleTest {
             assertThat(1996 + i, is(equalTo(books.get(i).getPublicationYear())));
             assertThat("George R R Martin", is(equalTo(books.get(i).getAuthor())));
         }
+    }
+
+    @Test
+    public void showMenuList() {
+        BibliotecaApp biblioteca = new BibliotecaApp();
+        String menuList = "1 - List all books\n";
+        biblioteca.printMenu();
+        assertThat(outContent.toString(), is(equalTo(menuList)));
+    }
+
+    @Test
+    public void testSelectListAllBooksOption() {
+        BibliotecaApp biblioteca = new BibliotecaApp();
+        biblioteca.setBooks(books);
+        biblioteca.selectOption(1);
+        String listBooks = "";
+        for(int i=0;i<books.size();i++) {
+            listBooks += books.get(i).getTitle() + "\n";
+        }
+        
+        assertThat(outContent.toString(), is(equalTo(listBooks)));
+
     }
 }
