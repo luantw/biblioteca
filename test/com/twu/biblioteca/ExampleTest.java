@@ -176,4 +176,30 @@ public class ExampleTest {
 
         assertThat(outContent.toString(), is(equalTo(message)));
     }
+
+    @Test
+    public void returnBook() {
+        Book book = new Book();
+        book.setCheckOut(true);
+        book.setCheckOut(false);
+
+        assertThat(book.getCheckOut(), is(false));
+    }
+
+    @Test
+    public void returnedBookIsInTheAvailableList() {
+        books.get(1).setCheckOut(true); // book unavailable
+        books.get(1).setCheckOut(false); // book available again
+
+        String response = "Thank you! Enjoy the book\n";
+        for(int i=0;i<books.size(); i++) {
+            response += books.get(i).getTitle() + "\n";
+        }
+
+        BibliotecaApp biblioteca = new BibliotecaApp();
+        biblioteca.setBooks(books);
+        biblioteca.listAllBooks();
+
+        assertThat(outContent.toString(), is(equalTo(response)));
+    }
 }
