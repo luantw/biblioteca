@@ -18,6 +18,7 @@ public class BibliotecaApp {
 
     public void printMenu() {
         System.out.println("1 - List all books");
+        System.out.println("0 - Quit Application");
 
         /*Scanner keyboard = new Scanner(System.in);
         int option = keyboard.nextInt();*/
@@ -28,6 +29,10 @@ public class BibliotecaApp {
         switch (option) {
             case 1:
                 listAllBooks();
+                break;
+            case 0:
+                System.out.println("Exiting application.");
+                //System.exit(0);
                 break;
             default:
                 System.out.println("Please select a valid option!");

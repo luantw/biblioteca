@@ -93,7 +93,7 @@ public class ExampleTest {
     @Test
     public void showMenuList() {
         BibliotecaApp biblioteca = new BibliotecaApp();
-        String menuList = "1 - List all books\n";
+        String menuList = "1 - List all books\n0 - Quit Application\n";
         biblioteca.printMenu();
         assertThat(outContent.toString(), is(equalTo(menuList)));
     }
@@ -119,6 +119,17 @@ public class ExampleTest {
         biblioteca.selectOption(888);
 
         String message = "Please select a valid option!\n";
+
+        assertThat(outContent.toString(), is(equalTo(message)));
+    }
+
+    @Test
+    public void quitApplication() {
+        BibliotecaApp biblioteca = new BibliotecaApp();
+        biblioteca.setBooks(books);
+        biblioteca.selectOption(0);
+
+        String message = "Exiting application.\n";
 
         assertThat(outContent.toString(), is(equalTo(message)));
     }
