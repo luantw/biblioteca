@@ -30,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="213" column="5" selection-start-line="213" selection-start-column="5" selection-end-line="213" selection-end-column="5" />
+            <state relative-caret-position="313">
+              <caret line="219" column="26" lean-forward="true" selection-start-line="219" selection-start-column="26" selection-end-line="219" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#408#414#0" expanded="true" />
@@ -55,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Book.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="49" column="64" selection-start-line="49" selection-start-column="64" selection-end-line="49" selection-end-column="64" />
+            <state relative-caret-position="268">
+              <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
               <folding>
                 <element signature="e#194#195#0" expanded="true" />
                 <element signature="e#213#214#0" expanded="true" />
@@ -75,7 +75,7 @@
                 <element signature="e#532#533#0" expanded="true" />
                 <element signature="e#565#566#0" expanded="true" />
                 <element signature="e#591#592#0" expanded="true" />
-                <element signature="e#1199#1200#0" expanded="true" />
+                <element signature="e#1343#1344#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,8 +97,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" />
-        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Book.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Book.java" />
       </list>
     </option>
   </component>
@@ -151,7 +151,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549641245571" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549641590873" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -169,7 +169,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ExampleTest.notifySuccessfulReturn">
+  <component name="RunManager" selected="JUnit.ExampleTest.notifyOnUnsuccessfulReturn">
     <configuration name="ExampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <extension name="coverage">
@@ -185,7 +185,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExampleTest.checkOutFailureMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExampleTest.notifyOnUnsuccessfulReturn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <extension name="coverage">
         <pattern>
@@ -195,7 +195,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.ExampleTest" />
-      <option name="METHOD_NAME" value="checkOutFailureMessage" />
+      <option name="METHOD_NAME" value="notifyOnUnsuccessfulReturn" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -251,11 +251,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExampleTest.notifyOnUnsuccessfulReturn" />
         <item itemvalue="JUnit.ExampleTest.notifySuccessfulReturn" />
         <item itemvalue="JUnit.ExampleTest" />
         <item itemvalue="JUnit.ExampleTest.returnedBookIsInTheAvailableList" />
         <item itemvalue="JUnit.ExampleTest.returnBook" />
-        <item itemvalue="JUnit.ExampleTest.checkOutFailureMessage" />
       </list>
     </recent_temporary>
   </component>
@@ -273,12 +273,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ExampleTest_checkOutFailureMessage - 2019.02.08 at 13h 46m 00s.xml">
-      <configuration name="ExampleTest.checkOutFailureMessage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ExampleTest - 2019.02.08 at 13h 46m 09s.xml">
-      <configuration name="ExampleTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ExampleTest_returnBook - 2019.02.08 at 13h 48m 31s.xml">
       <configuration name="ExampleTest.returnBook" configurationId="JUnit" />
     </history-entry>
@@ -302,6 +296,12 @@
     </history-entry>
     <history-entry file="ExampleTest_notifySuccessfulReturn - 2019.02.08 at 13h 53m 50s.xml">
       <configuration name="ExampleTest.notifySuccessfulReturn" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExampleTest_notifyOnUnsuccessfulReturn - 2019.02.08 at 13h 57m 15s.xml">
+      <configuration name="ExampleTest.notifyOnUnsuccessfulReturn" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExampleTest_notifyOnUnsuccessfulReturn - 2019.02.08 at 13h 59m 26s.xml">
+      <configuration name="ExampleTest.notifyOnUnsuccessfulReturn" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -354,34 +354,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="49" column="64" selection-start-line="49" selection-start-column="64" selection-end-line="49" selection-end-column="64" />
-          <folding>
-            <element signature="e#194#195#0" expanded="true" />
-            <element signature="e#213#214#0" expanded="true" />
-            <element signature="e#119#120#0" expanded="true" />
-            <element signature="e#152#153#0" expanded="true" />
-            <element signature="e#186#187#0" expanded="true" />
-            <element signature="e#207#208#0" expanded="true" />
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#532#533#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#591#592#0" expanded="true" />
-            <element signature="e#1199#1200#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="213" column="5" selection-start-line="213" selection-start-column="5" selection-end-line="213" selection-end-column="5" />
+        <state relative-caret-position="313">
+          <caret line="219" column="26" lean-forward="true" selection-start-line="219" selection-start-column="26" selection-end-line="219" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#408#414#0" expanded="true" />
@@ -397,6 +373,30 @@
             <element signature="method#listPublicationYearsAndAuthorsFromBooks#0;class#ExampleTest#0" />
             <element signature="method#testSelectListAllBooksOption#0;class#ExampleTest#0" />
             <element signature="method#checkOutSuccessMessage#1;class#ExampleTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+          <folding>
+            <element signature="e#194#195#0" expanded="true" />
+            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#119#120#0" expanded="true" />
+            <element signature="e#152#153#0" expanded="true" />
+            <element signature="e#186#187#0" expanded="true" />
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#1343#1344#0" expanded="true" />
           </folding>
         </state>
       </provider>
