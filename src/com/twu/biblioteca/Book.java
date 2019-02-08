@@ -36,6 +36,11 @@ public class Book {
     }
 
     public void setCheckOut(boolean checkOut) {
+        if (checkOut && this.checkOut) {
+            System.out.println("Sorry, that book is not available");
+            return;
+        }
+
         this.checkOut = checkOut;
         if (this.checkOut) {
             System.out.println("Thank you! Enjoy the book");

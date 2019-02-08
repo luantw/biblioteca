@@ -165,4 +165,15 @@ public class ExampleTest {
 
         assertThat(outContent.toString(), is(equalTo(message)));
     }
+
+    @Test
+    public void checkOutFailureMessage() {
+        Book book = new Book();
+        book.setCheckOut(true);
+
+        book.setCheckOut(true);
+        String message = "Thank you! Enjoy the book\nSorry, that book is not available\n";
+
+        assertThat(outContent.toString(), is(equalTo(message)));
+    }
 }
