@@ -145,7 +145,7 @@ public class ExampleTest {
     @Test
     public void testIfCheckedOutBooksDoesNotAppearInBooksList() {
         books.get(1).setCheckOut(true);
-        String response = "";
+        String response = "Thank you! Enjoy the book\n";
         for(int i=0;i<books.size(); i++) {
             response += (i != 1)? books.get(i).getTitle() + "\n" : "";
         }
@@ -155,5 +155,14 @@ public class ExampleTest {
         biblioteca.listAllBooks();
 
         assertThat(outContent.toString(), is(equalTo(response)));
+    }
+
+    @Test
+    public void checkOutSuccessMessage() {
+        Book book = new Book();
+        book.setCheckOut(true);
+        String message = "Thank you! Enjoy the book\n";
+
+        assertThat(outContent.toString(), is(equalTo(message)));
     }
 }

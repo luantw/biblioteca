@@ -37,6 +37,9 @@ public class Book {
 
     public void setCheckOut(boolean checkOut) {
         this.checkOut = checkOut;
+        if (this.checkOut) {
+            System.out.println("Thank you! Enjoy the book");
+        }
     }
 
     public boolean getCheckOut() {
