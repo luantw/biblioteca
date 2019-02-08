@@ -133,4 +133,27 @@ public class ExampleTest {
 
         assertThat(outContent.toString(), is(equalTo(message)));
     }
+
+    @Test
+    public void checkOutABook() {
+        Book book = new Book();
+        book.setCheckOut(true);
+
+        assertThat(book.getCheckOut(), is(true));
+    }
+
+    @Test
+    public void testIfCheckedOutBooksDoesNotAppearInBooksList() {
+        books.get(1).setCheckOut(true);
+        String response = "";
+        for(int i=0;i<books.size(); i++) {
+            response += (i != 1)? books.get(i).getTitle() + "\n" : "";
+        }
+
+        BibliotecaApp biblioteca = new BibliotecaApp();
+        biblioteca.setBooks(books);
+        biblioteca.listAllBooks();
+
+        assertThat(outContent.toString(), is(equalTo(response)));
+    }
 }
