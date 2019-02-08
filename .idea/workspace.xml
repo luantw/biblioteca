@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76e60784-ec6c-4863-b573-b0455f1e3fea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/ExampleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/ExampleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,18 +26,19 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
+            <state relative-caret-position="411">
+              <caret line="87" column="27" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#408#414#0" expanded="true" />
                 <element signature="e#376#377#0" expanded="true" />
                 <element signature="e#397#398#0" expanded="true" />
-                <element signature="e#804#805#0" expanded="true" />
+                <element signature="e#900#901#0" expanded="true" />
                 <element signature="method#testWelcomeMessage#0;class#ExampleTest#0" />
                 <element signature="method#testBook#0;class#ExampleTest#0" />
-                <element signature="e#1346#1347#0" expanded="true" />
-                <element signature="e#1374#1375#0" expanded="true" />
+                <element signature="method#listAllBooks#0;class#ExampleTest#0" />
+                <element signature="method#testPublicationYearOfABook#0;class#ExampleTest#0" />
+                <element signature="method#getAuthorOfABook#0;class#ExampleTest#0" />
               </folding>
             </state>
           </provider>
@@ -48,13 +47,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Book.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+            <state relative-caret-position="435">
+              <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
               <folding>
                 <element signature="e#119#120#0" expanded="true" />
                 <element signature="e#152#153#0" expanded="true" />
                 <element signature="e#186#187#0" expanded="true" />
                 <element signature="e#207#208#0" expanded="true" />
+                <element signature="e#300#301#0" expanded="true" />
+                <element signature="e#343#344#0" expanded="true" />
+                <element signature="e#382#383#0" expanded="true" />
+                <element signature="e#403#404#0" expanded="true" />
+                <element signature="e#496#497#0" expanded="true" />
+                <element signature="e#532#533#0" expanded="true" />
+                <element signature="e#565#566#0" expanded="true" />
+                <element signature="e#591#592#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,7 +137,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549626758641" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549627600762" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -148,7 +155,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ExampleTest">
+  <component name="RunManager" selected="JUnit.ExampleTest.listPublicationYearsAndAuthorsFromBooks">
     <configuration name="ExampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <extension name="coverage">
@@ -160,6 +167,22 @@
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.ExampleTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExampleTest.getAuthorOfABook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="biblioteca" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.ExampleTest" />
+      <option name="METHOD_NAME" value="getAuthorOfABook" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -180,7 +203,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExampleTest.sizeOfBooksList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExampleTest.listPublicationYearsAndAuthorsFromBooks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <extension name="coverage">
         <pattern>
@@ -190,13 +213,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.ExampleTest" />
-      <option name="METHOD_NAME" value="sizeOfBooksList" />
+      <option name="METHOD_NAME" value="listPublicationYearsAndAuthorsFromBooks" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExampleTest.testBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExampleTest.testPublicationYearOfABook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <extension name="coverage">
         <pattern>
@@ -206,23 +229,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.ExampleTest" />
-      <option name="METHOD_NAME" value="testBook" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExampleTest.testWelcomeMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="biblioteca" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.ExampleTest" />
-      <option name="METHOD_NAME" value="testWelcomeMessage" />
+      <option name="METHOD_NAME" value="testPublicationYearOfABook" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -230,11 +237,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExampleTest.listPublicationYearsAndAuthorsFromBooks" />
+        <item itemvalue="JUnit.ExampleTest.getAuthorOfABook" />
+        <item itemvalue="JUnit.ExampleTest.testPublicationYearOfABook" />
         <item itemvalue="JUnit.ExampleTest" />
         <item itemvalue="JUnit.ExampleTest.listAllBooks" />
-        <item itemvalue="JUnit.ExampleTest.sizeOfBooksList" />
-        <item itemvalue="JUnit.ExampleTest.testBook" />
-        <item itemvalue="JUnit.ExampleTest.testWelcomeMessage" />
       </list>
     </recent_temporary>
   </component>
@@ -252,24 +259,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ExampleTest_testBook - 2019.02.08 at 09h 43m 01s.xml">
-      <configuration name="ExampleTest.testBook" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ExampleTest_listAllBooks - 2019.02.08 at 09h 48m 18s.xml">
-      <configuration name="ExampleTest.listAllBooks" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ExampleTest_listAllBooks - 2019.02.08 at 09h 48m 28s.xml">
-      <configuration name="ExampleTest.listAllBooks" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ExampleTest_listAllBooks - 2019.02.08 at 09h 48m 37s.xml">
-      <configuration name="ExampleTest.listAllBooks" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ExampleTest_sizeOfBooksList - 2019.02.08 at 09h 49m 14s.xml">
-      <configuration name="ExampleTest.sizeOfBooksList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ExampleTest_listAllBooks - 2019.02.08 at 09h 50m 40s.xml">
-      <configuration name="ExampleTest.listAllBooks" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ExampleTest - 2019.02.08 at 09h 51m 09s.xml">
       <configuration name="ExampleTest" configurationId="JUnit" />
     </history-entry>
@@ -281,6 +270,24 @@
     </history-entry>
     <history-entry file="ExampleTest_listAllBooks - 2019.02.08 at 09h 52m 01s.xml">
       <configuration name="ExampleTest.listAllBooks" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExampleTest_listAllBooks - 2019.02.08 at 09h 52m 25s.xml">
+      <configuration name="ExampleTest.listAllBooks" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExampleTest - 2019.02.08 at 09h 52m 41s.xml">
+      <configuration name="ExampleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExampleTest_testPublicationYearOfABook - 2019.02.08 at 09h 59m 01s.xml">
+      <configuration name="ExampleTest.testPublicationYearOfABook" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExampleTest_getAuthorOfABook - 2019.02.08 at 10h 02m 15s.xml">
+      <configuration name="ExampleTest.getAuthorOfABook" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExampleTest_listPublicationYearsAndAuthorsFromBooks - 2019.02.08 at 10h 05m 44s.xml">
+      <configuration name="ExampleTest.listPublicationYearsAndAuthorsFromBooks" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExampleTest_listPublicationYearsAndAuthorsFromBooks - 2019.02.08 at 10h 06m 23s.xml">
+      <configuration name="ExampleTest.listPublicationYearsAndAuthorsFromBooks" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -328,31 +335,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        <state relative-caret-position="435">
+          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
           <folding>
             <element signature="e#119#120#0" expanded="true" />
             <element signature="e#152#153#0" expanded="true" />
             <element signature="e#186#187#0" expanded="true" />
             <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
+        <state relative-caret-position="411">
+          <caret line="87" column="27" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#408#414#0" expanded="true" />
             <element signature="e#376#377#0" expanded="true" />
             <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
+            <element signature="e#900#901#0" expanded="true" />
             <element signature="method#testWelcomeMessage#0;class#ExampleTest#0" />
             <element signature="method#testBook#0;class#ExampleTest#0" />
-            <element signature="e#1346#1347#0" expanded="true" />
-            <element signature="e#1374#1375#0" expanded="true" />
+            <element signature="method#listAllBooks#0;class#ExampleTest#0" />
+            <element signature="method#testPublicationYearOfABook#0;class#ExampleTest#0" />
+            <element signature="method#getAuthorOfABook#0;class#ExampleTest#0" />
           </folding>
         </state>
       </provider>

@@ -24,6 +24,8 @@ public class ExampleTest {
         for (int i=1; i<=7; i++) {
             Book book = new Book();
             book.setTitle("Game of thrones vol " + i);
+            book.setPublicationYear(1995 + i);
+            book.setAuthor("George R R Martin");
             books.add(book);
         }
     }
@@ -59,6 +61,31 @@ public class ExampleTest {
     public void listAllBooks() {
         for(int i=0; i<7; i++) {
             assertThat("Game of thrones vol " + (i + 1), is(equalTo(books.get(i).getTitle())));
+        }
+    }
+
+    @Test
+    public void testPublicationYearOfABook() {
+        Book book = new Book();
+        book.setTitle("Game of thrones vol 1");
+        book.setPublicationYear(1996);
+
+        assertThat(1996, is(equalTo(book.getPublicationYear())));
+    }
+
+    @Test
+    public void getAuthorOfABook() {
+        Book book = new Book();
+        book.setAuthor("George R R Martin");
+
+        assertThat("George R R Martin", is(equalTo(book.getAuthor())));
+    }
+
+    @Test
+    public void listPublicationYearsAndAuthorsFromBooks() {
+        for(int i=0; i<7; i++) {
+            assertThat(1996 + i, is(equalTo(books.get(i).getPublicationYear())));
+            assertThat("George R R Martin", is(equalTo(books.get(i).getAuthor())));
         }
     }
 }
