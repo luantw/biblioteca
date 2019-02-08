@@ -45,6 +45,10 @@ public class Book {
         if (this.checkOut) {
             System.out.println("Thank you! Enjoy the book");
         }
+
+        if (!this.checkOut) {
+            System.out.println("Thank you for returning the book");
+        }
     }
 
     public boolean getCheckOut() {

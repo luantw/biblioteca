@@ -202,4 +202,14 @@ public class ExampleTest {
 
         assertThat(outContent.toString(), is(equalTo(response)));
     }
+
+    @Test
+    public void notifySuccessfulReturn() {
+        Book book = new Book();
+        book.setCheckOut(true);
+        book.setCheckOut(false);
+        String message = "Thank you! Enjoy the book\nThank you for returning the book\n";
+
+        assertThat(outContent.toString(), is(equalTo(message)));
+    }
 }
