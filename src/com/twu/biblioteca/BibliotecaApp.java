@@ -29,6 +29,8 @@ public class BibliotecaApp {
             case 1:
                 listAllBooks();
                 break;
+            default:
+                System.out.println("Please select a valid option!");
         }
     }
 
