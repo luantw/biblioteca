@@ -216,7 +216,12 @@ public class ExampleTest {
     @Test
     public void notifyOnUnsuccessfulReturn() {
         Book book = new Book();
-        book.setCheckOut(false);
+        book.setTitle("Lord of the rings");
+        BibliotecaApp biblioteca = new BibliotecaApp();
+        biblioteca.setBooks(this.books);
+
+        biblioteca.checkout(book);
+
         String message = "This is not a valid book to return\n";
 
         assertThat(outContent.toString(), is(equalTo(message)));

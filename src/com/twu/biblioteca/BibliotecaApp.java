@@ -48,4 +48,23 @@ public class BibliotecaApp {
         }
     }
 
+    public void checkout(Book book) {
+        boolean isValid = false;
+        for(int i=0; i<this.books.size(); i++) {
+            if (book.getTitle() == this.books.get(i).getTitle()) {
+                isValid = true;
+                this.books.get(i).setCheckOut(true);
+                break;
+            }
+        }
+
+        if (!isValid) {
+            System.out.println("This is not a valid book to return");
+        }
+    }
+
+    /*public ArrayList<Book> getBooks() {
+        return this.books;
+    }*/
+
 }

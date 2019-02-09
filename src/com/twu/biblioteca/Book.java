@@ -41,11 +41,6 @@ public class Book {
             return;
         }
 
-        if (!checkOut && !this.checkOut) {
-            System.out.println("This is not a valid book to return");
-            return;
-        }
-
         this.checkOut = checkOut;
         if (this.checkOut) {
             System.out.println("Thank you! Enjoy the book");
