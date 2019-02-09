@@ -226,4 +226,18 @@ public class ExampleTest {
 
         assertThat(outContent.toString(), is(equalTo(message)));
     }
+
+    @Test
+    public void testMovie() {
+        Movie movie = new Movie();
+        movie.setTitle("The Hobbit");
+        movie.setPublicationYear(2012);
+        movie.setDirector("Peter Jackson");
+        movie.setRating(8);
+
+        assertThat("The Hobbit", is(equalTo(movie.getTitle())));
+        assertThat(2012, is(equalTo(movie.getPublicationYear())));
+        assertThat("Peter Jackson", is(equalTo(movie.getDirector())));
+        assertThat(8,is(equalTo(movie.getRating())));
+    }
 }
