@@ -20,4 +20,11 @@ public class Movie extends BibliotecaItem {
     public int getRating() {
         return this.rating;
     }
+
+    public void printInfos() {
+        System.out.println(this.getTitle() + ", " +
+                this.getPublicationYear() + ", " +
+                this.getDirector() + ", " +
+                this.getRating());
+    }
 }

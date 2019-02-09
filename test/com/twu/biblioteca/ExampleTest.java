@@ -14,6 +14,7 @@ public class ExampleTest {
 
     private ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private ArrayList<Book> books = new ArrayList<Book>();
+    private ArrayList<Movie> movies = new ArrayList<Movie>();
 
     @Before
     public void setUpStreams() {
@@ -28,6 +29,18 @@ public class ExampleTest {
             book.setPublicationYear(1995 + i);
             book.setAuthor("George R R Martin");
             books.add(book);
+        }
+    }
+
+    @Before
+    public void setMovies() {
+        for (int i=0; i<3; i++) {
+            Movie movie = new Movie();
+            movie.setTitle("The Hobbit vol " + (i + 1));
+            movie.setPublicationYear(2012 + i);
+            movie.setDirector("Peter Jackson");
+            movie.setRating(8 - i);
+            movies.add(movie);
         }
     }
 
@@ -239,5 +252,20 @@ public class ExampleTest {
         assertThat(2012, is(equalTo(movie.getPublicationYear())));
         assertThat("Peter Jackson", is(equalTo(movie.getDirector())));
         assertThat(8,is(equalTo(movie.getRating())));
+    }
+
+    @Test
+    public void testListMovies() {
+        String moviesInfo = "";
+        for (int i=0; i<this.movies.size(); i++) {
+            Movie movie = this.movies.get(i);
+            moviesInfo += "The Hobbit vol " + (i + 1) + ", " +
+                    (2012 + i) + ", " +
+                    "Peter Jackson, " +
+                    (8 - i) + "\n";
+            movie.printInfos();
+        }
+
+        assertThat(outContent.toString(), is(equalTo(moviesInfo)));
     }
 }
