@@ -191,7 +191,7 @@ public class ExampleTest {
         books.get(1).setCheckOut(true); // book unavailable
         books.get(1).setCheckOut(false); // book available again
 
-        String response = "Thank you! Enjoy the book\n";
+        String response = "Thank you! Enjoy the book\nThank you for returning the book\n";
         for(int i=0;i<books.size(); i++) {
             response += books.get(i).getTitle() + "\n";
         }

@@ -1,31 +1,8 @@
 package com.twu.biblioteca;
 
-public class Book {
+public class Book extends BibliotecaItem {
 
-    private String title;
-    private int publicationYear;
     private String author;
-    private boolean checkOut;
-
-    public void Book() {
-        this.checkOut = false;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getTitle() {
-        return this.title;
-    }
-
-    public void setPublicationYear(int year) {
-        this.publicationYear = year;
-    }
-
-    public int getPublicationYear() {
-        return this.publicationYear;
-    }
 
     public void setAuthor(String author) {
         this.author = author;
@@ -35,23 +12,5 @@ public class Book {
         return this.author;
     }
 
-    public void setCheckOut(boolean checkOut) {
-        if (checkOut && this.checkOut) {
-            System.out.println("Sorry, that book is not available");
-            return;
-        }
 
-        this.checkOut = checkOut;
-        if (this.checkOut) {
-            System.out.println("Thank you! Enjoy the book");
-        }
-
-        if (!this.checkOut) {
-            System.out.println("Thank you for returning the book");
-        }
-    }
-
-    public boolean getCheckOut() {
-        return this.checkOut;
-    }
 }
