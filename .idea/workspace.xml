@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76e60784-ec6c-4863-b573-b0455f1e3fea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Movie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -34,8 +33,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="261" column="52" selection-start-line="261" selection-start-column="52" selection-end-line="261" selection-end-column="52" />
+            <state relative-caret-position="373">
+              <caret line="275" column="55" selection-start-line="275" selection-start-column="55" selection-end-line="275" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#408#414#0" expanded="true" />
@@ -63,6 +62,8 @@
                 <element signature="method#returnedBookIsInTheAvailableList#0;class#ExampleTest#0" />
                 <element signature="method#notifySuccessfulReturn#0;class#ExampleTest#0" />
                 <element signature="method#notifyOnUnsuccessfulReturn#0;class#ExampleTest#0" />
+                <element signature="method#testMovie#0;class#ExampleTest#0" />
+                <element signature="method#testListMovies#0;class#ExampleTest#0" />
               </folding>
             </state>
           </provider>
@@ -191,7 +192,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549679219436" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549679650714" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -214,7 +215,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ExampleTest.testListMovies">
+  <component name="RunManager" selected="JUnit.ExampleTest.checkOutMovie">
     <configuration name="ExampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <extension name="coverage">
@@ -230,6 +231,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExampleTest.checkOutMovie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="biblioteca" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.ExampleTest" />
+      <option name="METHOD_NAME" value="checkOutMovie" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ExampleTest.notifyOnUnsuccessfulReturn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <extension name="coverage">
@@ -241,22 +258,6 @@
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.ExampleTest" />
       <option name="METHOD_NAME" value="notifyOnUnsuccessfulReturn" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExampleTest.notifySuccessfulReturn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="biblioteca" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.ExampleTest" />
-      <option name="METHOD_NAME" value="notifySuccessfulReturn" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -296,11 +297,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExampleTest.checkOutMovie" />
         <item itemvalue="JUnit.ExampleTest.testListMovies" />
         <item itemvalue="JUnit.ExampleTest.testMovie" />
         <item itemvalue="JUnit.ExampleTest" />
         <item itemvalue="JUnit.ExampleTest.notifyOnUnsuccessfulReturn" />
-        <item itemvalue="JUnit.ExampleTest.notifySuccessfulReturn" />
       </list>
     </recent_temporary>
   </component>
@@ -318,9 +319,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ExampleTest_notifyOnUnsuccessfulReturn - 2019.02.08 at 22h 18m 10s.xml">
-      <configuration name="ExampleTest.notifyOnUnsuccessfulReturn" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ExampleTest_notifyOnUnsuccessfulReturn - 2019.02.08 at 22h 18m 15s.xml">
       <configuration name="ExampleTest.notifyOnUnsuccessfulReturn" configurationId="JUnit" />
     </history-entry>
@@ -346,6 +344,9 @@
       <configuration name="ExampleTest.testMovie" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ExampleTest_testListMovies - 2019.02.09 at 00h 26m 39s.xml">
+      <configuration name="ExampleTest.testListMovies" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ExampleTest_testListMovies - 2019.02.09 at 00h 27m 01s.xml">
       <configuration name="ExampleTest.testListMovies" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -446,8 +447,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="261" column="52" selection-start-line="261" selection-start-column="52" selection-end-line="261" selection-end-column="52" />
+        <state relative-caret-position="373">
+          <caret line="275" column="55" selection-start-line="275" selection-start-column="55" selection-end-line="275" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#408#414#0" expanded="true" />
@@ -475,6 +476,8 @@
             <element signature="method#returnedBookIsInTheAvailableList#0;class#ExampleTest#0" />
             <element signature="method#notifySuccessfulReturn#0;class#ExampleTest#0" />
             <element signature="method#notifyOnUnsuccessfulReturn#0;class#ExampleTest#0" />
+            <element signature="method#testMovie#0;class#ExampleTest#0" />
+            <element signature="method#testListMovies#0;class#ExampleTest#0" />
           </folding>
         </state>
       </provider>

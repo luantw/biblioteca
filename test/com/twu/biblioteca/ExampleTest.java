@@ -268,4 +268,11 @@ public class ExampleTest {
 
         assertThat(outContent.toString(), is(equalTo(moviesInfo)));
     }
+
+    @Test
+    public void checkOutMovie() {
+        movies.get(1).setCheckOut(true);
+
+        assertThat(true, is(movies.get(1).getCheckOut()));
+    }
 }
