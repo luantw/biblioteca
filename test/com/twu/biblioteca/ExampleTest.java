@@ -275,4 +275,14 @@ public class ExampleTest {
 
         assertThat(true, is(movies.get(1).getCheckOut()));
     }
+
+    @Test
+    public void testUser() {
+        User user = new User();
+        user.setLibraryNumber("123-1234");
+        user.setPassword("1234");
+
+        assertThat("123-1234", is(equalTo(user.getLibraryNumber())));
+        assertThat("1234", is(equalTo(user.getPassword())));
+    }
 }
