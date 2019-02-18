@@ -63,6 +63,11 @@ public class BibliotecaApp {
         }
     }
 
+    public void checkout(Book book, User user) {
+        user.checkOutBook(book);
+        this.checkout(book);
+    }
+
     /*public ArrayList<Book> getBooks() {
         return this.books;
     }*/

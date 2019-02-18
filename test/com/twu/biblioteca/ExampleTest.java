@@ -285,4 +285,29 @@ public class ExampleTest {
         assertThat("123-1234", is(equalTo(user.getLibraryNumber())));
         assertThat("1234", is(equalTo(user.getPassword())));
     }
+
+    @Test
+    public void testIfUserIsLibrarian() {
+        User user = new User();
+
+        assertThat(user.isLibrarian(), is(false));
+        user.setLibrarian(true);
+        assertThat(user.isLibrarian(), is(true));
+    }
+
+    @Test
+    public void testUserCheckOutBook() {
+        BibliotecaApp biblioteca = new BibliotecaApp();
+
+        User user = new User();
+        user.setLibraryNumber("1234");
+        user.setPassword("1234");
+
+        Book book = new Book();
+        book.setTitle("Harry Potter 1");
+
+        biblioteca.checkout(book, user);
+
+        assertThat(user.checkedBooks(), hasItem(book));
+    }
 }
